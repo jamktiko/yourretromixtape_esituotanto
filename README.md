@@ -1,59 +1,42 @@
-# Your Retro Mixtape
+# sv
 
-Sovellus arpoo käyttäjän valitsemasta tyylilajista satunnaisen kuratoidun musiikkivideon. Videon lisäksi käyttäjä saa lisätietoa musiikkivideon taustasta tai muusta mielenkiintoisesta ominaisuudesta. Tarkoitus on tarjota käyttäjälle musiikkivideoiden tavanomaisen katselutavan lisänä toimiva mahdollisuus löytää itselle tuntematon musiikkivideo ja oppia samalla uutta myös jo tunnetuista kappaleista.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Description
+## Creating a project
 
-An in-depth paragraph about your project and overview of use.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Getting Started
-
-### Dependencies
-
-- Describe any prerequisites, libraries, frameworks, etc., the sofware uses.
-
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- How to run the program
-- Step-by-step bullets
-
-```
-code blocks for commands
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-## Help
+To recreate this project with the same configuration:
 
-Any advise for common problems or issues.
-
+```sh
+# recreate this project
+npx sv@0.15.1 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:typography,forms" --install npm ./
 ```
-command to run if program contains helper info
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Authors
+## Building
 
-Contributors names
+To create a production version of your app:
 
-## Version History
+```sh
+npm run build
+```
 
-- 0.2
-  - Various bug fixes and optimizations
-- 0.1
-  - Initial Release
+You can preview the production build with `npm run preview`.
 
-## License
-
-This project is licensed under the CC BY-SA 4.0 License - see the LICENSE.md file for details
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
