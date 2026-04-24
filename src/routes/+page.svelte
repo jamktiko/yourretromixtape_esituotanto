@@ -20,7 +20,8 @@
 		<div
 			class="h-36 w-72 rounded-[5px] border-[3px] border-stone-800 bg-text-box p-1 text-center font-['Inter'] text-base leading-4 font-bold text-stone-800 shadow-[0px_4px_4px_2px_rgba(0,0,0,0.25)]"
 		>
-			Did you know?
+			<h2>Did you know?</h2>
+			<p class="p-1">This would contain information about the video.</p>
 		</div>
 	</section>
 </div>
